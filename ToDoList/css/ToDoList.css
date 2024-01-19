@@ -1,0 +1,174 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  padding: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.task-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskForm {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px; /* Adjust the gap as needed */
+    align-items: center;
+    max-width: 400px; /* Adjust the width as needed */
+  }
+* {
+  box-sizing: border-box;
+}
+
+  #taskForm label {
+    padding: 5px;
+    text-align: right;
+  }
+
+  #taskForm input,
+  #taskForm select,
+  #taskForm textarea {
+    padding: 5px;
+    margin: 5px 0;
+  }
+
+  #taskForm textarea {
+    grid-column: 2 / 3;
+    resize: vertical;
+  }
+
+  #taskForm button {
+    grid-column: 2 / 3;
+    margin-top: 10px;
+  }
+  #teamFields {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px; /* Ensure gap is same as #taskForm */
+  }
+  
+  #teamFields label,
+  #teamFields input {
+    grid-column: span 1 / span 1;
+  }
+  
+  /* #teamFields label {
+    text-align: right;
+    padding: 5px;
+  }
+  
+  #teamFields input {
+    padding: 5px;
+    margin: 5px 0;
+  } */
+
+  /* If you want to align labels and fields in the middle */
+  #taskForm br {
+    display: none;
+  }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ .main-wrapper {
+   margin-top: 100px;
+   margin-left: 100px;
+}
+.btn-group {
+   display: inline-block;
+}
+.icon-complete {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #ddd;
+   border-radius: 50%;
+}
+.icon-complete-active {
+   border-color: green;
+   text-align: center;
+}
+.icon-complete-active:after {
+   content: '√';
+   color: green;
+}
+.todo-item {
+   margin-bottom: 10px;
+}
+.todo-text {
+   font-size: 18px;
+}
+.item-complete .todo-text {
+   color: #999;
+   text-decoration: line-through;
+}
+.filter-btn-group {
+   display: inline-block;
+   margin-left: 60px;
+}
+
